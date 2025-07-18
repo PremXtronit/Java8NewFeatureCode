@@ -40,7 +40,7 @@ public class GenericHashMapSortByValue {
     }
 
     public static <K, V> void printMap(Map<K, V> map) {
-        System.out.println("Generic Way of HashMap  sorting entries by values ");
+        System.out.println("Generic Way of HashMap  ds.sorting entries by values ");
         for (Map.Entry<K, V> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " ==> " + entry.getValue());
         }

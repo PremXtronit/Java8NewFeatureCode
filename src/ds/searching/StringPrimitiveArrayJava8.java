@@ -1,4 +1,4 @@
-package searching;
+package ds.searching;
 
 //Java examples to check if an Array (String or Primitive type) contains a certain values, updated with Java 8 stream APIs.
 

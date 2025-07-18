@@ -21,9 +21,9 @@ public class CollectionsCountDuplicatedList {
 
         Map<String, Integer> map = new HashMap<String, Integer>();
 
-        for (String temp : list) {
-            Integer count = map.get(temp);
-            map.put(temp, (count == null) ? 1 : count + 1);
+        for (String s : list) {
+            Integer count = map.getOrDefault(s, 0);
+            map.put(s, map.getOrDefault(s, 0) + 1);
         }
         printMap(map);
 

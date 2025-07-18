@@ -24,5 +24,13 @@ public class MapFlatMapMethods {
         System.out.println(evenMultiple); //[2, 4, 6, 8, 10]
 
 
+
+        List<String> lines = Arrays.asList("a b c", "d e", "f");
+        List<String> words = lines.stream()
+                .flatMap(x -> Arrays.stream(x.split(" ")))
+                .collect(Collectors.toList());
+
+        System.out.println(words);
+
     }
 }

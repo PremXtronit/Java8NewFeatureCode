@@ -28,6 +28,7 @@ public class ForEachDemo {
         });
 
         Set<String> items = map.keySet();
+        Collection<Integer> values1 = map.values();
 
         items.forEach(item -> System.out.println(item));
 

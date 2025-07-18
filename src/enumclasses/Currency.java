@@ -23,6 +23,7 @@ public enum Currency {
             return "Orange-violet";
         }
     };
+
     private int value;
 
     public abstract String color();

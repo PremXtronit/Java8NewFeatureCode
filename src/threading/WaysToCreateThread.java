@@ -4,7 +4,6 @@ public class WaysToCreateThread {
 
     public static void main(String[] args) {
 
-
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -13,8 +12,9 @@ public class WaysToCreateThread {
         });
         t1.start();
 
-
-
+        Runnable r = () -> System.out.println("Job of the Thread");
+        Thread t2 = new Thread(r);
+        t2.start();
 
     }
 

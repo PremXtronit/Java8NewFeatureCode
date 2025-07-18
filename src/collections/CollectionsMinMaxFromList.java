@@ -9,6 +9,7 @@ public class CollectionsMinMaxFromList {
     public static void main(String args[]) {
 
         int[] iArray = new int[]{-18, 40, 45};
+        List<Integer> iList = Arrays.stream(iArray).boxed().toList();
         List<Integer> intList = Arrays.asList(-18, 40, -45);
         List<String> stringList = Arrays.asList("abc", "abb", "c");
 
@@ -25,6 +26,7 @@ public class CollectionsMinMaxFromList {
         studentList.add(new Student("s1", 10));
         studentList.add(new Student("s4", 40));
         studentList.add(new Student("s5", 50));
+
         System.out.println("Min val: " + Collections.min(studentList, Student.AgeComparator));
         System.out.println("Max val: " + Collections.max(studentList, new AgeComparator()));
     }

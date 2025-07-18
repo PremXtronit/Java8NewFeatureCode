@@ -20,6 +20,7 @@ public class LambdaComparator {
                 return o1.getAge() - o2.getAge();
             }
         });
+
         //sort by name
         Collections.sort(list, new Comparator<Developer>() {
             @Override
@@ -34,12 +35,16 @@ public class LambdaComparator {
             System.out.println(developer);
         });
 
+
         list.sort((o1, o2) -> o1.getName().compareTo(o2.getName()));
 
         list.forEach(System.out::println);
 
         Comparator<Developer> salaryComparator = (o1, o2) -> o1.getName().compareTo(o2.getName());
         list.sort(salaryComparator.reversed());
+
+
+
 
     }
 

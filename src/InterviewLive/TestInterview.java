@@ -1,4 +1,4 @@
-package z_test;
+package InterviewLive;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,14 +16,19 @@ public class TestInterview {
         method2(e1);
         Employee e2 = new Employee();
         e2.name = "Vipin";
-
-        map.containsKey(e2);
+        System.out.println(map.containsKey(e2));
 
         System.out.println(e1);
 
+        StringBuilder sb1 = new StringBuilder("hello");
+        StringBuilder sb2 = new StringBuilder("hello");
+        // Convert to String for comparison
+        int result = sb1.compareTo(sb2);
+        System.out.println(result); // Will output a value based on lexicographical comparison
     }
 
     public static void method2(Employee e) {
-        e.name = "Interview";
+        e.name = "InterviewLive";
+        System.out.println(e.name);
     }
 }

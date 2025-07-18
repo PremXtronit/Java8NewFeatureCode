@@ -16,7 +16,7 @@ public class FirstNonRepeatedChar {
         Map<Character, Integer> counts = new LinkedHashMap<Character, Integer>(str.length());
 
         for (char c : str.toCharArray()) {
-            counts.put(c, counts.containsKey(c) ? counts.get(c) + 1 : 1);
+            counts.put(c, counts.getOrDefault(c, 0) + 1);
         }
         System.out.println(counts);
 

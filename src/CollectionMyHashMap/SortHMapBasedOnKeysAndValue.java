@@ -15,7 +15,7 @@ public class SortHMapBasedOnKeysAndValue {
         unsortedMap.put("KeyC", "ValueB");
         unsortedMap.put("KeyD", "ValueA");
 
-        System.out.println("HashMap before sorting, random order " + unsortedMap);
+        System.out.println("HashMap before ds.sorting, random order " + unsortedMap);
         Set<Map.Entry<String, String>> entries = unsortedMap.entrySet();
         for (Map.Entry<String, String> entry : entries) {
             System.out.println(entry.getKey() + " ==> " + entry.getValue());
@@ -23,13 +23,13 @@ public class SortHMapBasedOnKeysAndValue {
 
         TreeMap<String, String> sorted = new TreeMap<>(unsortedMap);
         Set<Map.Entry<String, String>> mappings = sorted.entrySet();
-        System.out.println("HashMap after sorting by keys in ascending order ");
+        System.out.println("HashMap after ds.sorting by keys in ascending order ");
         for (Map.Entry<String, String> mapping : mappings) {
             System.out.println(mapping.getKey() + " ==> " + mapping.getValue());
         }
 
 
-        System.out.println("HashMap after sorting entries by values ");
+        System.out.println("HashMap after ds.sorting entries by values ");
         Comparator<Map.Entry<String, String>> valueComparator =
                 new Comparator<Map.Entry<String, String>>() {
                     @Override

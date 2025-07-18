@@ -1,4 +1,4 @@
-package sorting;
+package ds.sorting;
 
 
 public class MyInsertionSort {

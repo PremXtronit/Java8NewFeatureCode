@@ -1,4 +1,4 @@
-package searching;
+package ds.searching;
 
 
 public class BinarySearchRecursive {

@@ -10,7 +10,7 @@ public class Stream {
     public static void main(String[] args) {
         // write your code here
 
-        List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5);
 
         //find even number and double them and The sum of Them
         int sum = 0;
@@ -26,6 +26,9 @@ public class Stream {
 
         //integerList.stream().filter(integer -> integer % 2 == 0).map();
 
+
+        int sum1 = integerList.stream().reduce(4, (a, b) -> a + b);
+        System.out.println(sum1);
     }
 
 }

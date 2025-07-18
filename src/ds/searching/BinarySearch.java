@@ -1,12 +1,13 @@
-package searching;
+package ds.searching;
 
 
 public class BinarySearch {
 
     public static void main(String[] args) {
-        int c, first, last, middle, n, search = 40, array[];
 
-        array = new int[]{10, 20, 30, 40, 50};
+        int c, first, last, middle, n, search = 40;
+
+        int[] array = new int[]{10, 20, 30, 40, 50};
 
         first = 0;
         last = array.length - 1;

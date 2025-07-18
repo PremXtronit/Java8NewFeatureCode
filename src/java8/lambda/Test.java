@@ -11,10 +11,17 @@ public class Test {
         MyInterface myInterface = () -> {
             System.out.println(x);
             System.out.println(y);
-            x=888;
+            x = 888;
             //y=999; CTE
         };
         myInterface.m1();
+
+
+        MyInterface2 f2 = (a) -> {
+            System.out.println(a);
+        };
+
+        f2.m2(100);
 
     }
 
