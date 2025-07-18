@@ -16,13 +16,15 @@ public class MyHashMap<K, V> {
         } else {
             boolean done = false;
             while (!done) {
+                //check duplicate key
                 if (key.equals(entry.getKey())) {
                     entry.setValue(value);
                     done = true;
-                } else if (entry.getNext() == null) {
+                } else if (entry.getNext() == null) { // check if pointer is null
                     entry.setNext(new Entry<K, V>(key, value));
                     done = true;
                 }
+                //move the pointer
                 entry = entry.getNext();
             }
         }
